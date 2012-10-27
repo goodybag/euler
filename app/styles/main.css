@@ -63,7 +63,7 @@ h3 {
 }
 
 .main-nav a:hover {
-  margin-left: -1000px;
+  /*margin-left: -1000px;*/
 }
 *:nth-child(n + 5){ background: #ff0000; }
 
