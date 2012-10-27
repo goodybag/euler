@@ -87,7 +87,7 @@
       data = {};
     }
     callback = callback || utils.noop;
-    $.get(config.api.baseUrl + url, data, function(response, responseType){
+    $.get(config.api.baseUrl + url, data, function(response){
       callback(response.error, response.data);
     });
   };
@@ -350,7 +350,7 @@ $(function(){
       // Returns data ready for our template given an activity model
     , massageData = function(attributes){
         return {
-          name:       (attributes.who && attributes.who.screenName) ? attributes.who.screnName : "Someone"
+          name:       (attributes.who && attributes.who.screenName) ? attributes.who.screenName : "Someone"
         , business:   attributes.where.org.name
         , charity:    attributes.data.charity.name
         , amount:     attributes.data.donationAmount
@@ -402,7 +402,6 @@ $(function(){
       // Optional index will offset the time - useful for adding multiple items in sequence
     , addNewActivityEl = function($el, index){
         index = index || 0;
-
         // Allow some time between each addition
         setTimeout(function(){
           // Put the element in the getting ready position and insert into the DOM
@@ -447,6 +446,7 @@ $(function(){
           var $fragment = $();
           for (var i = 0; i < data.length; i++){
             // Cache the id
+			console.log(i);
             ids.push(data[i]._id);
 
             // Add the new activity html to the collection
@@ -466,7 +466,7 @@ $(function(){
 
     init(); // Here we goooooooo! - Mario64
   })();
-Array.prototype.slice = function(){};
+/*Array.prototype.slice = function(){};*/
 
 
   /**
