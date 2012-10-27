@@ -74,7 +74,7 @@ h3 {
 .main-header {
   position: relative;
   height: 370px;
-  background-image: url('../images/blue-plaid.png');
+  background-image: url('../images/header-accent.png');
   color: white;
   text-shadow: 1px 2px 0 #40C0CC;
   text-align: center;
@@ -85,7 +85,7 @@ h3 {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background: url('../images/header-accent.png') center center no-repeat;
+  background: url('../images/blue_pla.png') center center no-repeat;
 
   -webkit-box-shadow: inset 0 -3px 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow:    inset 0 -3px 3px rgba(0, 0, 0, 0.1);
