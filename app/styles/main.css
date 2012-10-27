@@ -137,9 +137,11 @@ h3 {
   min-height: 50px;
   font-size: 1.3em;
   line-height: 1.2em;
+  text-align: center;
 }
 .how-it-works .step > p {
   min-height: 90px;
+  text-align: center;
 }
 
 .actions-row {
