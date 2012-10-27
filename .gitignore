@@ -1,0 +1,9 @@
+node_modules/
+logs/
+pids/
+cluster.sock
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+www/js/jam/*
+!www/js/jam/jam.json
