@@ -191,6 +191,7 @@ h3 {
 .activity .avatar {
   width: 40px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius:20px;
 }
 
 .activity .actor {
