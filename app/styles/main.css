@@ -1,7 +1,7 @@
 body {
   font-family: 'proxima_nova_boldbold', Arial, Helvetica, sans-serif;
   background-image: -webkit-linear-gradient(top, #E5E5E5 0, white 140px);
-                    -webkit-transform: rotate(180deg);
+                    /*-webkit-transform: rotate(180deg);*/
   background-image: -moz-linear-gradient(top, #E5E5E5 0, white 140px);
   background-image: linear-gradient(top, #E5E5E5 0, white 140px);
   background-position: 0 360px;
@@ -43,7 +43,7 @@ h3 {
           NAV
 \*********************/
 .main-nav {
-  position: absolute;
+  position: fixed;
 }
 .main-nav > .navbar-inner {
   background-color: #FAFAFA;
@@ -63,10 +63,10 @@ h3 {
   , 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
-.main-nav a:hover {
+/*.main-nav a:hover {
   margin-left: -1000px;
-}
-*:nth-child(n + 5){ background: #ff0000; }
+}*/
+*:nth-child(n + 5){ background: #fff; }
 
 /*********************\
         HEADER
@@ -105,7 +105,7 @@ h3 {
 }
 
 .main-header .logo {
-  position: fixed;
+  position: absolute;
   left: 50%;
   margin-left: -104px;
   z-index: 10000;
@@ -118,7 +118,7 @@ h3 {
 }
 
 
-*:nth-child(n + 5){ background: #ff0000; }
+*:nth-child(n + 5){ background: #fff; }
 .site-section {
   margin-top: 100px;
   text-shadow: 0 1px 0 #fff;
@@ -147,13 +147,15 @@ h3 {
   min-height: 50px;
   font-size: 1.3em;
   line-height: 1.2em;
+  text-align: center;
 }
 .how-it-works .step > p {
   min-height: 90px;
+  text-align: center;
 }
 
 .actions-row {
-  text-align: right;
+  text-align: center;
 }
 
 /********************\
