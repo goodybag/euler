@@ -1,7 +1,6 @@
 body {
   font-family: 'proxima_nova_boldbold', Arial, Helvetica, sans-serif;
   background-image: -webkit-linear-gradient(top, #E5E5E5 0, white 140px);
-                    -webkit-transform: rotate(180deg);
   background-image: -moz-linear-gradient(top, #E5E5E5 0, white 140px);
   background-image: linear-gradient(top, #E5E5E5 0, white 140px);
   background-position: 0 360px;
