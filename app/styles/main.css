@@ -7,7 +7,6 @@ body {
   color: #555;
 }
 
-*:nth-child(n + 5){ background: #ff0000; }
 h1, h2, h3, h4, h5 {
   font-family: 'museo_slab_500italic', Arial, Helvetica, sans-serif;
   font-weight: normal;
@@ -63,8 +62,6 @@ h3 {
   , 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
-*:nth-child(n + 5){ background: #ff0000; }
-
 /*********************\
         HEADER
 \*********************/
@@ -114,8 +111,6 @@ h3 {
   -webkit-transform: translate3d(419px, -267px, 0);
 }
 
-
-*:nth-child(n + 5){ background: #ff0000; }
 .site-section {
   margin-top: 100px;
   text-shadow: 0 1px 0 #fff;
@@ -200,9 +195,6 @@ h3 {
   color: #13C1EC;
 }
 
-.activity .time {
-  color: #bbb;
-}
 .sign-up-and-stream .errors {
   margin-left: 20px;
   color: #B94A48;
