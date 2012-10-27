@@ -142,7 +142,7 @@ $(function(){
     $(window).scroll(update);
   })();
 
-  // Test update stream - This code no longer does anything but I'm too lazy to remove
+  // Test update stream
   (function(){
     var
       // The test activity already in the DOM
@@ -150,7 +150,8 @@ $(function(){
     , $clone      = $el.clone()
       // The activity wrapper
     , $wrapper    = $('#activity-stream .activity-wrapper')
-    , height      = $el[0].offsetHeight
+    , height      = 560 // I don't know how to actually fix it 
+                        // but I knew where the problem was
       // Needs to correspond to the transition time in main.css
     , transition  = 500
     ;
@@ -168,7 +169,7 @@ $(function(){
         $wrapper.prepend($el = $clone.clone());
       }, transition);
     }, 5000);
-  })/*()*/; // Don't execute anymore
+  })();
 
 
 
@@ -350,7 +351,7 @@ $(function(){
       // Returns data ready for our template given an activity model
     , massageData = function(attributes){
         return {
-          name:       (attributes.who && attributes.who.screenName) ? attributes.who.screnName : "Someone"
+          name:       (attributes.who && attributes.who.screenName) ? attributes.who.screenName : "Someone"
         , business:   attributes.where.org.name
         , charity:    attributes.data.charity.name
         , amount:     attributes.data.donationAmount
@@ -466,7 +467,7 @@ $(function(){
 
     init(); // Here we goooooooo! - Mario64
   })();
-Array.prototype.slice = function(){};
+//Array.prototype.slice = function(){};
 
 
   /**
