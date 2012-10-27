@@ -19,12 +19,33 @@
   </head>
   <body>
 
+  <script type="template" id="activity-tmpl">
+    <div class="activity">
+      <img src="https://s3.amazonaws.com/goodybag-uploads/consumers-secure/{{screenName}}-128.png" alt="" class="img-circle avatar" />
+      <p class="story">
+        <span class="actor">{{name}}</span>
+        tapped in at
+        <span class="organization">{{business}}</span>
+        and raised
+        <span class="amount-raised">{{amount}}&#162;</span>
+        for
+        <span class="charity-name">{{charity}}</span>
+        <span class="time">{{when}}</span>
+      </p>
+    </div>
+  </script>
+
   <!-- ****************** -->
   <!--     NAVIGATION     -->
   <!-- ****************** -->
   <div class="navbar navbar-fixed-top main-nav">
     <div class="navbar-inner">
       <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <div class="nav-collapse collapse">
           <ul class="nav">
             <li><a href="#home">Home</a></li>
@@ -49,9 +70,6 @@
     </div>
   </header>
 
-  <!-- ****************** -->
-  <!--    HOW IT WORKS    -->
-  <!-- ****************** -->
   <div class="container site-section how-it-works" id="how-it-works">
     <h2>How it Works</h2>
     <div class="inner-section row">
@@ -81,10 +99,6 @@
 
   <div class="container site-section sign-up-and-stream">
     <div class="row">
-
-      <!-- ************* -->
-      <!--    SIGN UP    -->
-      <!-- ************* -->
       <div class="span5">
         <h2 id="sign-up">Sign Up</h2>
         <div class="inner-section">
@@ -130,90 +144,17 @@
         <p class="pre-reg">Goodybag is completely free and completely awesome. After you get an account, you can start redeeming goodies at our participating businesses.</p>
         <p class="post-reg hide">WOWEE! Thanks for signing up. Now get to Tapping In so you can start redeeming goodies.</p>
       </div>
-
-      <!-- ************ -->
-      <!--    STREAM    -->
-      <!-- ************ -->
-      <div class="span8">
+      <div class="span7">
         <h2>Hey, what's goin' on?</h2>
         <div class="inner-section">
           <div class="stream-container limit">
-            <div class="activity-wrapper" id="activity-stream">
-              <div class="activity">
-                <img src="https://s3.amazonaws.com/goodybag-uploads/consumers/000000000000000000000000-128.png" alt="" class="avatar" />
-                <p class="story">
-                  <span class="actor">john.awesome</span>
-                  tapped in at
-                  <span class="organization">1379 Sports</span>
-                  and raised
-                  <span class="amount-raised">10&#162;</span>
-                  for
-                  <span class="charity-name">Austin Children Shelter</span>
-                  <span class="time">5 minutes ago</span>
-                </p>
-              </div>
-              <div class="activity">
-                <img src="https://s3.amazonaws.com/goodybag-uploads/consumers/000000000000000000000000-128.png" alt="" class="avatar" />
-                <p class="story">
-                  <span class="actor">john.awesome</span>
-                  tapped in at
-                  <span class="organization">1379 Sports</span>
-                  and raised
-                  <span class="amount-raised">10&#162;</span>
-                  for
-                  <span class="charity-name">Austin Children Shelter</span>
-                  <span class="time">an hour ago</span>
-                </p>
-              </div>
-              <div class="activity">
-                <img src="https://s3.amazonaws.com/goodybag-uploads/consumers/000000000000000000000000-128.png" alt="" class="avatar" />
-                <p class="story">
-                  <span class="actor">john.awesome</span>
-                  tapped in at
-                  <span class="organization">1379 Sports</span>
-                  and raised
-                  <span class="amount-raised">10&#162;</span>
-                  for
-                  <span class="charity-name">Austin Children Shelter</span>
-                  <span class="time">1 day ago</span>
-                </p>
-              </div>
-              <div class="activity">
-                <img src="https://s3.amazonaws.com/goodybag-uploads/consumers/000000000000000000000000-128.png" alt="" class="avatar" />
-                <p class="story">
-                  <span class="actor">john.awesome</span>
-                  tapped in at
-                  <span class="organization">1379 Sports</span>
-                  and raised
-                  <span class="amount-raised">10&#162;</span>
-                  for
-                  <span class="charity-name">Austin Children Shelter</span>
-                  <span class="time">1 day ago</span>
-                </p>
-              </div>
-              <div class="activity">
-                <img src="https://s3.amazonaws.com/goodybag-uploads/consumers/000000000000000000000000-128.png" alt="" class="avatar" />
-                <p class="story">
-                  <span class="actor">john.awesome</span>
-                  tapped in at
-                  <span class="organization">1379 Sports</span>
-                  and raised
-                  <span class="amount-raised">10&#162;</span>
-                  for
-                  <span class="charity-name">Austin Children Shelter</span>
-                  <span class="time">1 day ago</span>
-                </p>
-              </div>
-            </div>
+            <div class="activity-wrapper" id="activity-stream"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ************ -->
-  <!--    FOOTER    -->
-  <!-- ************ -->
   <footer class="site-section footer">
     <div class="inner-section">
       <div class="container">
@@ -230,5 +171,10 @@
 
   <!-- Add your site or application content here -->
 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="scripts/vendor/jquery.min.js"><\/script>')</script>
+  <script src="scripts/vendor/moment.js"></script>
+
+  <script src="scripts/app.js"></script>
 </body>
 </html>
