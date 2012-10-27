@@ -1,9 +1,9 @@
 # Euler - An Evaluation Project
 
-This is a test of your ability to understand Front-end Javascript. Please solve the following problems.
+This is a test of your ability to understand back-end Javascript, in particular, node.js. Please solve the following problems.
 
-* We're getting an error: Uncaught TypeError: Cannot set property '0' of undefined in jquery for some reason - I believe this is causing the stream to disappear
-* Once you fix the above error, for some reason on the stream, everyones names is undefined.
-* When submitting the sign up form, it refreshes the page but it should just get the data and submit via ajax. The code is all there, but something is missing...
-* On the sign up form, if you submit with invalid data, it displays a list of errors on what did not pass validation. It is currently creating the elements in the javascript and setting the html there as well. Given what you can see from the activity stream template, create a template for the error messages and implement that method for displaying errors
-* When clicking the links in the navigation, it is supposed to animate the scrolling. The code is there to do it, but it's not working. Fix it.
+* Trying to open any route from the server or any static file causes a bunch of internal server errors. You must fix this error before moving on to the next
+* When trying to register a user, you get the following error: TypeError: Cannot call method 'info' of undefined at consumers.register.callbacks.save (/goodybag/evaluation-project/api/consumers.js:66:14) - Fix it
+* The stream is showing that the same person is tapping in over and over again at different businesses. This must have something to do with the screenName value being returned from there server since we use "Someone" as the name if the screenName isn't present
+* The logger is outputting red for the logger.info calls. It should be blue
+* In the register function in the consumer api, we first have to check to make sure that a user doesn't already exist with the requested email or screen name. After we verify that neither has been taken already, we then encrypt the password. Once that is complete, we update the user object with the encrypted password and save the document. Both the request to find one consumer object matching the email/screenName and the call to encrypt the password are asynchronous. Currently, we only call encrypt once the consumer.findOne call has called back. Implement it so that the encrypt password call and the findOne are executed at the same time. When they have both called back successfully, then save the updated document. You may not use any third-party control-flow libraries.

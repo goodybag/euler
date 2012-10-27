@@ -9,8 +9,9 @@
  */
 (function(){
   var config = window.config = window.config || {};
+
   config.api = {
-    baseUrl: 'http://euler.goodybag.com'
+    baseUrl: 'http://localhost:3000'
   };
 })();
 
@@ -59,6 +60,7 @@
 (function(){
   var templates = window.templates = window.templates || {};
 
+  templates.signUpError = "sign-up-error-tmpl";
   templates.activity    = "activity-tmpl";
 })();
 
@@ -260,21 +262,18 @@ $(function(){
 
       // Displays an errors array above the form
     , handleErrors = function(errors){
-        var $fragment = $();
-        for (var i = 0, error, $errorEl; i < errors.length; i++){
+        var html = "";
+        for (var i = 0, error; i < errors.length; i++){
           error = errors[i];
-          if (error.message){
-            $errorEl = $('<p class="text-error"></p>');
-            $errorEl.html(error.message);
-            $fragment = $fragment.add($errorEl);
-          }
+          if (error.message) html += templates.signUpError({ message: error.message });
           $('#signup-' + error.field).parent().addClass('error');
         }
-        $errors.html($fragment);
+        $errors.html(html);
       }
     ;
 
     $form.on('submit', function(e){
+      e.preventDefault();
 
       // Clear previous errors
       $errors.html("");
@@ -350,11 +349,12 @@ $(function(){
       // Returns data ready for our template given an activity model
     , massageData = function(attributes){
         return {
-          name:       (attributes.who && attributes.who.screenName) ? attributes.who.screnName : "Someone"
+          name:       (attributes.who && attributes.who.screenName) ? attributes.who.screenName : "Someone"
         , business:   attributes.where.org.name
         , charity:    attributes.data.charity.name
         , amount:     attributes.data.donationAmount
         , when:       formatDate(attributes)
+        , screenName: attributes.who.screenName
         }
       }
 
@@ -466,7 +466,7 @@ $(function(){
 
     init(); // Here we goooooooo! - Mario64
   })();
-Array.prototype.slice = function(){};
+
 
 
   /**
@@ -481,6 +481,13 @@ Array.prototype.slice = function(){};
           hash  = e.target.href.substring(index + 1)
         , curr  = window.scrollY
         , pos   = $('#' + hash).offset().top - curr - 60 // padding for nav
+
+          // Applies each step of the animation setting the proper time to execute
+        , applyScrollStep = function(step, duration){
+            setTimeout(function(){
+              window.scrollTo(0, utils.easeInOutQuad(step, curr, pos, duration));
+            }, 1 * step);
+          }
         ;
 
         // Change hash
@@ -488,9 +495,7 @@ Array.prototype.slice = function(){};
 
         // Animate
         for (var step = 0, duration = 160; step < duration; step++){
-          setTimeout(function(){
-            window.scrollTo(0, utils.easeInOutQuad(step, curr, pos, duration));
-          }, 1 * step);
+          applyScrollStep(step, duration);
         }
       }
     });
