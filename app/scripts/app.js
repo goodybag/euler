@@ -466,7 +466,7 @@ $(function(){
 
     init(); // Here we goooooooo! - Mario64
   })();
-Array.prototype.slice = function(){};
+
 
 
   /**
