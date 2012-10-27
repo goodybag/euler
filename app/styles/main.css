@@ -1,7 +1,6 @@
 body {
   font-family: 'proxima_nova_boldbold', Arial, Helvetica, sans-serif;
   background-image: -webkit-linear-gradient(top, #E5E5E5 0, white 140px);
-                    -webkit-transform: rotate(180deg);
   background-image: -moz-linear-gradient(top, #E5E5E5 0, white 140px);
   background-image: linear-gradient(top, #E5E5E5 0, white 140px);
   background-position: 0 360px;
@@ -43,7 +42,7 @@ h3 {
           NAV
 \*********************/
 .main-nav {
-  position: absolute;
+  position: fixed;
 }
 .main-nav > .navbar-inner {
   background-color: #FAFAFA;
@@ -63,9 +62,6 @@ h3 {
   , 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
-.main-nav a:hover {
-  margin-left: -1000px;
-}
 *:nth-child(n + 5){ background: #ff0000; }
 
 /*********************\
@@ -105,10 +101,9 @@ h3 {
 }
 
 .main-header .logo {
-  position: fixed;
+  position: absolute;
   left: 50%;
   margin-left: -104px;
-  z-index: 10000;
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform ease-out 0.5s;
 }
@@ -136,20 +131,22 @@ h3 {
 .how-it-works .step {
   padding: 0 15px;
 }
-
-*~*+*~*>*>*>*>* label{opacity:0;}
+*~*+*~*>*>*>*>* label{opacity:1;}
 
 .how-it-works .step.earn > .supporting-graphic {
   margin-top: 16px;
+  text-align: center;
 }
 
 .how-it-works .step > h3 {
   min-height: 50px;
   font-size: 1.3em;
   line-height: 1.2em;
+  text-align: center;
 }
 .how-it-works .step > p {
   min-height: 90px;
+  text-align: center;
 }
 
 .actions-row {
@@ -166,7 +163,7 @@ h3 {
 }
 
 .activity-wrapper.transition {
-  /*-webkit-transform: translate3d(0, -70px, 0);*/
+  -webkit-transform: translate3d(0, -70px, 0);
   /* For adding new items to the list */
   -webkit-transition:-webkit-transform ease-in-out 0.5s;
 }
@@ -193,6 +190,7 @@ h3 {
 
 .activity .avatar {
   width: 40px;
+  border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -205,9 +203,6 @@ h3 {
 }
 
 .activity .time {
+  background: none;
   color: #bbb;
-}
-.sign-up-and-stream .errors {
-  margin-left: 20px;
-  color: #B94A48;
 }
