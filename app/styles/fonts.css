@@ -1,0 +1,110 @@
+@/font-face {
+  font-family: 'proxima_nova_regularregular';
+  src: url('../fonts/proximanovaregular-webfont.eot');
+  src: url('../fonts/proximanovaregular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanovaregular-webfont.woff') format('woff'),
+  url('../fonts/proximanovaregular-webfont.ttf') format('truetype'),
+  url('../fonts/proximanovaregular-webfont.svg#proxima_nova_regularregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova_boldbold';
+  src: url('../fonts/proximanovabold-webfont.eot');
+  src: url('../fonts/proximanovabold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanovabold-webfont.woff') format('woff'),
+  url('../fonts/proximanovabold-webfont.ttf') format('truetype'),
+  url('../fonts/proximanovabold-webfont.svg#proxima_nova_boldbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova_semibolddemibold';
+  src: url('../fonts/proximanovasemibold-webfont.eot');
+  src: url('../fonts/proximanovasemibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanovasemibold-webfont.woff') format('woff'),
+  url('../fonts/proximanovasemibold-webfont.ttf') format('truetype'),
+  url('../fonts/proximanovasemibold-webfont.svg#proxima_nova_semibolddemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova_semiboldItdemiBd';
+  src: url('../fonts/proximanovasemibolditalic-webfont.eot');
+  src: url('../fonts/proximanovasemibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanovasemibolditalic-webfont.woff') format('woff'),
+  url('../fonts/proximanovasemibolditalic-webfont.ttf') format('truetype'),
+  url('../fonts/proximanovasemibolditalic-webfont.svg#proxima_nova_semiboldItdemiBd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova_regular_italicIt';
+  src: url('../fonts/proximanovaregularitalic-webfont.eot');
+  src: url('../fonts/proximanovaregularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanovaregularitalic-webfont.woff') format('woff'),
+  url('../fonts/proximanovaregularitalic-webfont.ttf') format('truetype'),
+  url('../fonts/proximanovaregularitalic-webfont.svg#proxima_nova_regular_italicIt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova_bold_italicItBd';
+  src: url('../fonts/proximanovabolditalic-webfont.eot');
+  src: url('../fonts/proximanovabolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanovabolditalic-webfont.woff') format('woff'),
+  url('../fonts/proximanovabolditalic-webfont.ttf') format('truetype'),
+  url('../fonts/proximanovabolditalic-webfont.svg#proxima_nova_bold_italicItBd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova_black_italicItHv';
+  src: url('../fonts/proximanovablackitalic-webfont.eot');
+  src: url('../fonts/proximanovablackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanovablackitalic-webfont.woff') format('woff'),
+  url('../fonts/proximanovablackitalic-webfont.ttf') format('truetype'),
+  url('../fonts/proximanovablackitalic-webfont.svg#proxima_nova_black_italicItHv') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_slab_300regular';
+  src: url('../fonts/museo_slab_300-webfont.eot');
+  src: url('../fonts/museo_slab_300-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/museo_slab_300-webfont.woff') format('woff'),
+  url('../fonts/museo_slab_300-webfont.ttf') format('truetype'),
+  url('../fonts/museo_slab_300-webfont.svg#museo_slab_300regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_slab_500regular';
+  src: url('../fonts/museo_slab_500-webfont.eot');
+  src: url('../fonts/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/museo_slab_500-webfont.woff') format('woff'),
+  url('../fonts/museo_slab_500-webfont.ttf') format('truetype'),
+  url('../fonts/museo_slab_500-webfont.svg#museo_slab_500regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo_slab_500italic';
+  src: url('../fonts/museo_slab_500_italic-webfont.eot');
+  src: url('../fonts/museo_slab_500_italic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/museo_slab_500_italic-webfont.woff') format('woff'),
+  url('../fonts/museo_slab_500_italic-webfont.ttf') format('truetype'),
+  url('../fonts/museo_slab_500_italic-webfont.svg#museo_slab_500italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham_mediumregular';
+  src: url('../fonts/gotham_medium-webfont.eot');
+  src: url('../fonts/gotham_medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/gotham_medium-webfont.woff') format('woff'),
+  url('../fonts/gotham_medium-webfont.ttf') format('truetype'),
+  url('../fonts/gotham_medium-webfont.svg#gotham_mediumregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
