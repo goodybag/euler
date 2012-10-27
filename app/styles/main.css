@@ -42,7 +42,8 @@ h3 {
           NAV
 \*********************/
 .main-nav {
-  position: absolute;
+  position: fixed;
+  top: 0;
 }
 .main-nav > .navbar-inner {
   background-color: #FAFAFA;
