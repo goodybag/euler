@@ -1,14 +1,13 @@
 body {
   font-family: 'proxima_nova_boldbold', Arial, Helvetica, sans-serif;
   background-image: -webkit-linear-gradient(top, #E5E5E5 0, white 140px);
-                    -webkit-transform: rotate(180deg);
   background-image: -moz-linear-gradient(top, #E5E5E5 0, white 140px);
   background-image: linear-gradient(top, #E5E5E5 0, white 140px);
   background-position: 0 360px;
   color: #555;
 }
 
-*:nth-child(n + 5){ background: #ff0000; }
+/**:nth-child(n + 5){ background: #ff0000; }*/
 h1, h2, h3, h4, h5 {
   font-family: 'museo_slab_500italic', Arial, Helvetica, sans-serif;
   font-weight: normal;
@@ -43,7 +42,7 @@ h3 {
           NAV
 \*********************/
 .main-nav {
-  position: absolute;
+  position: fixed;
 }
 .main-nav > .navbar-inner {
   background-color: #FAFAFA;
@@ -64,9 +63,9 @@ h3 {
 }
 
 .main-nav a:hover {
-  margin-left: -1000px;
+  /*margin-left: -1000px;*/
 }
-*:nth-child(n + 5){ background: #ff0000; }
+*:nth-child(n + 5){ /*background: #ff0000;*/ }
 
 /*********************\
         HEADER
@@ -105,7 +104,7 @@ h3 {
 }
 
 .main-header .logo {
-  position: fixed;
+  /*position: fixed;*/
   left: 50%;
   margin-left: -104px;
   z-index: 10000;
@@ -118,7 +117,7 @@ h3 {
 }
 
 
-*:nth-child(n + 5){ background: #ff0000; }
+*:nth-child(n + 5){ /*background: #ff0000;*/ }
 .site-section {
   margin-top: 100px;
   text-shadow: 0 1px 0 #fff;
@@ -135,9 +134,10 @@ h3 {
 
 .how-it-works .step {
   padding: 0 15px;
+  text-align:center;
 }
 
-*~*+*~*>*>*>*>* label{opacity:0;}
+*~*+*~*>*>*>*>* label{opacity:240;}
 
 .how-it-works .step.earn > .supporting-graphic {
   margin-top: 16px;
@@ -194,6 +194,7 @@ h3 {
 .activity .avatar {
   width: 40px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 40px;
 }
 
 .activity .actor {
