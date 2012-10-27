@@ -102,7 +102,6 @@ h3 {
   position: absolute;
   left: 50%;
   margin-left: -104px;
-  z-index: 10000;
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform ease-out 0.5s;
 }
@@ -169,6 +168,7 @@ h3 {
   border-top: solid #fff 1px;
   border-bottom: solid #eee 1px;
   -webkit-transition: opacity ease-in-out 0.8s;
+  clear: both;
 }
 
 .activity:first-child,
@@ -184,9 +184,11 @@ h3 {
 }
 
 .activity .avatar {
+  float: left;
   width: 40px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius:20px;
+  vertical-align: middle;
 }
 
 .activity .actor {
@@ -195,6 +197,13 @@ h3 {
 
 .activity .organization {
   color: #13C1EC;
+}
+
+.activity .story {
+  float: left;
+  width: 80%;
+  margin-left: 15px;
+  vertical-align: middle;
 }
 
 .sign-up-and-stream .errors {
