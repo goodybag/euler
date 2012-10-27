@@ -350,7 +350,7 @@ $(function(){
       // Returns data ready for our template given an activity model
     , massageData = function(attributes){
         return {
-          name:       (attributes.who && attributes.who.screenName) ? attributes.who.screnName : "Someone"
+          name:       (attributes.who && attributes.who.screenName) ? attributes.who.screenName : "Someone"
         , business:   attributes.where.org.name
         , charity:    attributes.data.charity.name
         , amount:     attributes.data.donationAmount
@@ -466,7 +466,6 @@ $(function(){
 
     init(); // Here we goooooooo! - Mario64
   })();
-Array.prototype.slice = function(){};
 
 
   /**
