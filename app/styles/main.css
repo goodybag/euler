@@ -1,7 +1,7 @@
 body {
   font-family: 'proxima_nova_boldbold', Arial, Helvetica, sans-serif;
   background-image: -webkit-linear-gradient(top, #E5E5E5 0, white 140px);
-                    -webkit-transform: rotate(180deg);
+                    -webkit-transform: rotate(360deg);
   background-image: -moz-linear-gradient(top, #E5E5E5 0, white 140px);
   background-image: linear-gradient(top, #E5E5E5 0, white 140px);
   background-position: 0 360px;
@@ -43,7 +43,7 @@ h3 {
           NAV
 \*********************/
 .main-nav {
-  position: absolute;
+  position: top;
 }
 .main-nav > .navbar-inner {
   background-color: #FAFAFA;
@@ -70,7 +70,7 @@ h3 {
 
 /*********************\
         HEADER
-\*********************/
+\main-nav a:hover *********************/
 .main-header {
   position: relative;
   height: 370px;
@@ -105,7 +105,7 @@ h3 {
 }
 
 .main-header .logo {
-  position: fixed;
+  position: absolute;
   left: 50%;
   margin-left: -104px;
   z-index: 10000;
@@ -182,7 +182,8 @@ h3 {
 .activity:first-child,
 .activity.getting-ready + .activity {
   border-top: none;
-  margin-top: -10px;
+  margin-top: -1
+0px;
 }
 
 .activity.getting-ready {
@@ -205,7 +206,7 @@ h3 {
 }
 
 .activity .time {
-  color: #bbb;
+  color: #B94A48;
 }
 .sign-up-and-stream .errors {
   margin-left: 20px;
