@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+
+  <script type="template" id="activity-tmpl">
+    <div class="activity">
+      <img src="https://s3.amazonaws.com/goodybag-uploads/consumers-secure/{{screenName}}-128.png" alt="" class="img-circle avatar" />
+      <p class="story">
+        <span class="actor">{{name}}</span>
+        tapped in at
+        <span class="organization">{{business}}</span>
+        and raised
+        <span class="amount-raised">{{amount}}&#162;</span>
+        for
+        <span class="charity-name">{{charity}}</span>
+        <span class="time">{{when}}</span>
+      </p>
+    </div>
+  </script>
+
+  <!-- ****************** -->
+  <!--     NAVIGATION     -->
+  <!-- ****************** -->
+  <div class="navbar navbar-fixed-top main-nav">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#how-it-works">How it Works</a></li>
+            <li><a href="#sign-up">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- *************** -->
+  <!--      HEADER     -->
+  <!-- *************** -->
+  <header class="main-header" id="home">
+    <div class="header-inner">
+      <div class="container">
+        <h1>Welcome to Goodybag!</h1>
+        <p class="lead">Earn rewards and support charities just by shopping at your favorite businesses</p>
+        <img src="http://www.goodybag.com/images/logo.png" class="logo" id="logo" />
+      </div>
+    </div>
+  </header>
+
+  <div class="container site-section how-it-works" id="how-it-works">
+    <h2>How it Works</h2>
+    <div class="inner-section row">
+      <div class="span4">
+        <div class="step grab">
+          <h3>Grab a Key Tag</h3>
+          <p>Get your keytag at any participating business or download the mobile app.</p>
+          <img src="http://www.goodybag.com/images/img1.png" alt="iPhone Application and NFC tag" class="supporting-graphic">
+        </div>
+      </div>
+      <div class="span4">
+        <div class="step use">
+          <h3>Use it at all your favorite places</h3>
+          <p>Tap-In at hundreds of local businesses by tapping your keytag at the tablet.</p>
+          <img src="http://www.goodybag.com/images/img2.png" alt="iPhone Application and NFC tag" class="supporting-graphic">
+        </div>
+      </div>
+      <div class="span4">
+        <div class="step earn">
+          <h3>Earn rewards while supporting charities</h3>
+          <p>For every Tap-In, you’ll earn points towards rewards &amp; the businesses you visit will donate to charities.</p>
+          <img src="images/knick-knacks.png" alt="iPhone Application and NFC tag" class="supporting-graphic">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container site-section sign-up-and-stream">
+    <div class="row">
+      <div class="span5">
+        <h2 id="sign-up">Sign Up</h2>
+        <div class="inner-section">
+          <div class="errors" id="sign-up-errors"></div>
+          <form id="sign-up-form">
+            <div class="controls controls-row">
+              <div class="span2 control-group">
+                <label for="signup-firstName">First Name</label>
+                <input id="signup-firstName" name="firstName" type="text" class="span2" />
+              </div>
+              <div class="span2 control-group">
+                <label for="signup-lastName">Last Name</label>
+                <input id="signup-lastName" name="lastName" type="text" class="span2" />
+              </div>
+            </div>
+            <div class="controls controls-row">
+              <div class="span2 control-group">
+                <label for="signup-screenName">Screen Name</label>
+                <input id="signup-screenName" name="screenName" type="text" class="span2" />
+              </div>
+              <div class="span2 control-group">
+                <label for="signup-email">Email</label>
+                <input id="signup-email" name="email" type="email" class="span2" />
+              </div>
+            </div>
+            <div class="controls controls-row">
+              <div class="span2 control-group">
+                <label for="signup-password">Password</label>
+                <input id="signup-password" name="password" type="password" class="span2" />
+              </div>
+              <div class="span2 control-group">
+                <label for="signup-passwordAgain">Once Again</label>
+                <input id="signup-passwordAgain" name="passwordAgain" type="password" class="span2" />
+              </div>
+            </div>
+            <div class="controls controls-row actions-row">
+              <div class="span4">
+                <button class="btn">Sign Up!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <p class="pre-reg">Goodybag is completely free and completely awesome. After you get an account, you can start redeeming goodies at our participating businesses.</p>
+        <p class="post-reg hide">WOWEE! Thanks for signing up. Now get to Tapping In so you can start redeeming goodies.</p>
+      </div>
+      <div class="span7">
+        <h2>Hey, what's goin' on?</h2>
+        <div class="inner-section">
+          <div class="stream-container limit">
+            <div class="activity-wrapper" id="activity-stream"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-section footer">
+    <div class="inner-section">
+      <div class="container">
+        <p>© 2012 Goodybag, Inc., All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="scripts/vendor/jquery.min.js"><\/script>')</script>
+  <script src="scripts/vendor/moment.js"></script>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
